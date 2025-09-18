@@ -1,0 +1,79 @@
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  color: var(--page-text);
+  background-color: var(--page-bg);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Light Theme (Default) */
+  --navbar-bg: #f7f7f7;
+  --navbar-text: #222;
+  --page-bg: #f8fafc;
+  --page-text: #1e293b;
+  --form-bg: #ffffff;
+  --form-border: #e2e8f0;
+  --label-color: #374151;
+  --input-bg: #ffffff;
+  --input-text: #111827;
+  --input-border: #d1d5db;
+  --placeholder-color: #9ca3af;
+  --primary-color: #0070f3;
+  --primary-hover: #005bb5;
+  --secondary-color: #10b981;
+  --secondary-hover: #059669;
+  --link-color: #0070f3;
+  --link-hover: #005bb5;
+  --disabled-bg: #9ca3af;
+}
+
+body.dark {
+  /* Dark Theme Overrides */
+  --navbar-bg: #222;
+  --navbar-text: #fff;
+  --page-bg: #0f172a;
+  --page-text: #f1f5f9;
+  --form-bg: #1e293b;
+  --form-border: #334155;
+  --label-color: #e2e8f0;
+  --input-bg: #334155;
+  --input-text: #f1f5f9;
+  --input-border: #475569;
+  --placeholder-color: #94a3b8;
+  --primary-color: #3b82f6;
+  --primary-hover: #2563eb;
+  --secondary-color: #10b981;
+  --secondary-hover: #059669;
+  --link-color: #60a5fa;
+  --link-hover: #3b82f6;
+  --disabled-bg: #64748b;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
